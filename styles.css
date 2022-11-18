@@ -1,0 +1,22 @@
+body{
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    grid-template-rows: 100px 500px;
+}
+
+header{
+    background-color: whitesmoke;
+    grid-column: 2;
+    grid-row: 1;
+
+}
+
+sidebar{
+    background-color: lightblue;
+    grid-column:1 ;
+    grid-row: 1/3;
+}
+
+main{
+    background-color:lightgray;
+}
