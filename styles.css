@@ -1,7 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap');
+
 body{
     display: grid;
     grid-template-columns: 200px 1fr;
     grid-template-rows: 125px 1fr;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
 }
 
 header{
@@ -45,6 +49,7 @@ margin-top: 2px;
 }
 
 .header-buttons{
+    margin-top: 10px;
     color:white;
     background-color: #1F84EA;
     border-radius: 15px;
@@ -53,6 +58,12 @@ margin-top: 2px;
     border: none;
     font-weight: 700;
     cursor: pointer;
+}
+
+.header-buttons:hover{
+    border: 1px solid #1F84EA;
+    color: #1F84EA;
+    background-color: white;
 }
 
 sidebar{
@@ -64,6 +75,11 @@ sidebar{
     grid-template-rows: 50px repeat(6,30px) 70px repeat(3,30px);
     gap: 10px;
     align-items: center;
+}
+
+sidebar>div:hover{
+    color: white;
+    cursor: pointer;
 }
 
 sidebar>div>img{
@@ -97,7 +113,7 @@ main{
 }
 
 .card{
-height: 250px;
+height: 270px;
 width: 165px;
 padding: 10px;
 margin: 10px;
